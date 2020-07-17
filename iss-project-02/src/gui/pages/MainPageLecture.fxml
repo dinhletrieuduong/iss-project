@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #152047;" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="103.0" layoutY="55.0" prefHeight="53.0" prefWidth="431.0" text="University of Science" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="110.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" layoutX="521.0" layoutY="723.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="2.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="445.0" />
+      <TabPane layoutX="14.0" layoutY="116.0" prefHeight="435.0" prefWidth="732.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="116.0">
+         <tabs>
+            <Tab style="-fx-background-color: #9cd5ff;" text="Subjects list">
+              <content>
+                <AnchorPane fx:id="subjectList" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #def1ff; -fx-background-radius: 10;" />
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: #9cd5ff;" text="Subjects available">
+               <content>
+                  <AnchorPane fx:id="subAvailList" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #def1ff; -fx-background-radius: 10;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #9cd5ff;" text="Schedule">
+               <content>
+                  <AnchorPane fx:id="scheduleList" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #def1ff; -fx-background-radius: 10;" />
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #9cd5ff;" text="Profile">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #def1ff; -fx-background-radius: 10;" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</fx:root>

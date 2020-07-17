@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root prefHeight="634.0" prefWidth="1110.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tbvAttributes" layoutY="-41.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.0">
+        <columns>
+          <TableColumn prefWidth="184.0" text="Column" />
+          <TableColumn prefWidth="188.0" text="Type" />
+            <TableColumn prefWidth="90.0" style="-fx-alignment: center;" text="Nullable" />
+        </columns>
+      </TableView>
+      <HBox AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="fieldTableName" prefHeight="27.0" promptText="TableName" />
+            <Button mnemonicParsing="false" onAction="#newAttribute" prefHeight="27.0" prefWidth="120.0" text="Add Column" textFill="#06b259" />
+            <Button mnemonicParsing="false" onAction="#deleteAttribute" prefHeight="27.0" prefWidth="120.0" text="Delete Column" textFill="#b20000" />
+         </children>
+      </HBox>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#submitChanges" prefHeight="30.0" text="Submit" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</fx:root>

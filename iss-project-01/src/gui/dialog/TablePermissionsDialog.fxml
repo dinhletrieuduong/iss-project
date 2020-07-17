@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root prefHeight="520.0" prefWidth="764.0" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox prefHeight="100.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="100.0" text="Schema">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fieldSchema" editable="false" promptText="Schema" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="100.0" text="Table name" />
+                        <TextField fx:id="fieldTableName" editable="false" promptText="Table name" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="tbvUsers" onMouseClicked="#selectGrantee" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn maxWidth="500.0" prefWidth="162.0" sortable="false" text="User/Roles" />
+                    </columns>
+                  </TableView>
+                  <HBox layoutX="525.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addGrantee" prefHeight="27.0" prefWidth="120.0" text="Add" textFill="#06b259" />
+                        <Button mnemonicParsing="false" onAction="#revokeAllFromGrantee" prefHeight="27.0" prefWidth="120.0" text="Revoke All" textFill="#b20000" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <TableView fx:id="tbvPermissions" onMouseClicked="#selectPermission" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn prefWidth="118.0" resizable="false" sortable="false" text="Permission" />
+                      <TableColumn prefWidth="105.0" sortable="false" text="Grantor" />
+                        <TableColumn prefWidth="105.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="Grant" />
+                        <TableColumn prefWidth="105.0" resizable="false" sortable="false" style="-fx-alignment: CENTER;" text="With Grant" />
+                    </columns>
+                  </TableView>
+                  <HBox AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnUpdate" disable="true" mnemonicParsing="false" onAction="#updateTablePermissions" prefHeight="27.0" prefWidth="120.0" text="Update" textFill="#00970a" />
+                        <Button fx:id="btnColumnPermissions" disable="true" mnemonicParsing="false" onAction="#changeColPerms" prefHeight="27.0" prefWidth="120.0" text="ColumnPermissions" textFill="#b20000" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

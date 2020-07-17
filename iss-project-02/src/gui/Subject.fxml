@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #152047;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="61.0" prefHeight="140.0" prefWidth="805.0" style="-fx-background-color: #3072db; -fx-background-radius: 5;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="13.0" />
+      <Line endX="100.0" layoutX="174.0" layoutY="575.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="2.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="400.0" />
+      <TableView fx:id="tableView" layoutX="37.0" layoutY="76.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="70.0">
+        <columns>
+            <TableColumn prefWidth="154.0" text="Subject ID" />
+            <TableColumn minWidth="2.0" prefWidth="239.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="26.0" text="Subjects" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReload" layoutX="318.0" layoutY="559.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #8595ff;" text="Reload" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="40.0">
+         <effect>
+            <Bloom threshold="0.68" />
+         </effect>
+      </Button>
+      <Label layoutX="259.0" layoutY="26.0" text="Major:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="342.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Ten bo mon*" wrappingWidth="216.11328125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>

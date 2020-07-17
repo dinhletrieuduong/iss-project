@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="752.0" style="-fx-background-color: #152047;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="100.0" layoutX="174.0" layoutY="575.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <TableView layoutX="37.0" layoutY="76.0" prefHeight="473.0" prefWidth="850.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="76.0">
+        <columns>
+            <TableColumn minWidth="2.0" prefWidth="223.0" text="Subject name" />
+            <TableColumn prefWidth="75.0" text="Other" />
+            <TableColumn prefWidth="75.0" text="Bonus" />
+            <TableColumn prefWidth="75.0" text="Mid" />
+            <TableColumn prefWidth="75.0" text="Final" />
+            <TableColumn prefWidth="75.0" text="Lab" />
+            <TableColumn prefWidth="75.0" text="Average" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="26.0" text="Grade" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="454.0" layoutY="559.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #8595ff;" text="Reload" textFill="WHITE" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="42.0">
+         <effect>
+            <Bloom threshold="0.68" />
+         </effect>
+      </Button>
+      <ComboBox layoutX="565.0" layoutY="30.0" prefHeight="31.0" prefWidth="121.0" promptText="Year" AnchorPane.rightAnchor="42.0" />
+      <ComboBox layoutX="461.0" layoutY="30.0" prefHeight="31.0" prefWidth="121.0" promptText="Semester" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #152047;" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="100.0" layoutX="307.0" layoutY="470.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="2.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="450.0" />
+      <TableView fx:id="tableView" layoutX="37.0" layoutY="76.0" prefHeight="473.0" prefWidth="850.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="Major" />
+            <TableColumn prefWidth="120.0" text="Subject" />
+            <TableColumn prefWidth="125.0" text="Semester" />
+            <TableColumn prefWidth="100.0" text="Open Date" />
+            <TableColumn prefWidth="100.0" text="MaxOfStu" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="26.0" text="Subjects" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="636.0" layoutY="559.0" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Button fx:id="btnEdit" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #8595ff;" text="Edit" textFill="WHITE">
+               <effect>
+                  <Bloom threshold="0.68" />
+               </effect>
+            </Button>
+            <Button fx:id="btnReload" mnemonicParsing="false" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #8595ff;" text="Reload" textFill="WHITE">
+               <effect>
+                  <Bloom threshold="0.68" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

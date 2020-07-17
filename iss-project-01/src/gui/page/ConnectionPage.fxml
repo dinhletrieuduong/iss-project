@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root minWidth="400.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER_LEFT" spacing="10.0" GridPane.hgrow="ALWAYS">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Test Login">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUsername" promptText="Username" />
+                        <TextField fx:id="txtPassword" promptText="Password" />
+                        <HBox alignment="TOP_RIGHT" spacing="10.0" VBox.vgrow="NEVER">
+                           <children>
+                              <Label fx:id="lblMsg" contentDisplay="CENTER" textFill="#cd2323" wrapText="true" />
+                              <Button minWidth="120.0" mnemonicParsing="false" onAction="#btnLogin_OnAction" text="Login">
+                                 <padding>
+                                    <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                     <children>
+                        <Label contentDisplay="CENTER" text="Connection">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtCnnUsername" promptText="Username" />
+                        <TextField fx:id="txtCnnPassword" promptText="Password" />
+                        <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                           <children>
+                              <TextField fx:id="txtCnnHost" promptText="Server" text="localhost" />
+                              <TextField fx:id="txtCnnPort" promptText="Port" text="1521" />
+                              <Button minWidth="150.0" mnemonicParsing="false" onAction="#btnSave_OnAction" text="Save" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</fx:root>

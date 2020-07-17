@@ -1,0 +1,8 @@
+Khoa = Faculity
+Bo mon = Major
+Mon = Subject
+Truong pho khoa = Dean
+Tiet hoc = Shift
+Sinh vien = Student
+Giang vien = Lecturer
+Truong bo mon = Head lecturer

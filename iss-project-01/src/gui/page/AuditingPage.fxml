@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.*?>-->
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="myAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="1047.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="nhatkitable" layoutX="11.0" layoutY="241.0" prefHeight="303.0" prefWidth="1025.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="174.0" text="Username" />
+          <TableColumn fx:id="ownerCol" prefWidth="191.0" text="Owner" />
+            <TableColumn fx:id="object_nameCol" prefWidth="210.0" text="Table" />
+            <TableColumn fx:id="actionCol" prefWidth="236.0" text="Action" />
+            <TableColumn fx:id="sql_textCol" prefWidth="213.0" text="SQL Text" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="195.0" text="System Log" textFill="#000000d1">
+         <font>
+            <Font name="Cooper Black" size="27.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="23.0" text="Audit track" textFill="#000000d1">
+         <font>
+            <Font name="Cooper Black" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="70.0" text="Audit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="70.0" text="ON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="EnableButt" layoutX="581.0" layoutY="66.0" mnemonicParsing="false" onAction="#EnableAuditUser" prefHeight="31.0" prefWidth="120.0" text="Enable" />
+      <Button fx:id="DisableButt" layoutX="713.0" layoutY="66.0" mnemonicParsing="false" onAction="#DisableAuditUser" prefHeight="31.0" prefWidth="120.0" text="Disable" />
+      <Button layoutX="846.0" layoutY="66.0" mnemonicParsing="false" onAction="#disableAuditing" prefHeight="31.0" prefWidth="150.0" text="Disable All Auditing" />
+      <TextField fx:id="UserText" layoutX="127.0" layoutY="66.0" prefHeight="31.0" prefWidth="190.0" promptText="User" />
+      <TextField fx:id="TableText" layoutX="368.0" layoutY="66.0" prefHeight="31.0" prefWidth="203.0" promptText="Table" />
+      <Button layoutX="204.0" layoutY="195.0" mnemonicParsing="false" onAction="#reload" prefHeight="31.0" prefWidth="156.0" text="Reload" />
+   </children>
+</fx:root>

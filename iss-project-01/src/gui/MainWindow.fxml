@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1300.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane nodeOrientation="LEFT_TO_RIGHT" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabUsers" closable="false" style="-fx-padding: 3 20 3 20;" text="Users" />
+          <Tab fx:id="tabRoles" closable="false" style="-fx-padding: 3 20 3 20;" text="Roles" />
+            <Tab fx:id="tabTables" closable="false" style="-fx-padding: 3 20 3 20;" text="Tables" />
+            <Tab fx:id="tabViews" closable="false" style="-fx-padding: 3 20 3 20;" text="Views" />
+            <Tab fx:id="tabAuditing" closable="false" style="-fx-padding: 3 20 3 20;" text="Auditing" />
+            <Tab fx:id="tabQuery" closable="false" style="-fx-padding: 3 20 3 20;" text="Query" />
+            <Tab fx:id="tabConn" closable="false" style="-fx-padding: 3 20 3 20;" text="Connection" />
+        </tabs>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TabPane>
+   </center>
+</fx:root>
